@@ -1,22 +1,169 @@
+/* Pallette */
+/*#4ABDAC
+#FC4A1A
+#F7B733
+#DFDCE3*/
 
+/* Typography */
 
+html, body, button {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+button {
+  font-size: 0.8em;
+  font-weight: 600px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
+}
+
+.about, .about a {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
+  text-decoration: none;
+}
+
+.about a:hover{
+  color: #F7B733;
+}
+
+footer {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+}
+
+/* Header */
+
+header {
+  background-color: #4ABDAC;
+}
+
+/* Navigation */
+.nav {
+  position: fixed;
+  display: inline-block;
+  list-style-type: none;
+  width: 80vw;
+}
+
+.nav li{
+  float: left;
+}
+
+.title {
+  margin-top: 0.5em;
+}
+
+.about {
+  float: right !important;
+  margin-top: 1.4em;
+}
+
+/* Logo */
+
+.logo {
+  height: 6em;
+  margin-top: 0.5em;
+  margin-left: 3em;
+}
+
+/* Content part */
+
+.container {
+  position: relative;
+  overflow-y: scroll;
+}
+
+/* Previews */
 
 .previews {
-    border: 1px solid black;
-    background-color: lightblue;
-    color: blue;
-    width: 150px;
-    height: 510px;
-    overflow: visible;
-    float:left;
-    margin-right: 25px;
-    overflow-y: scroll;
-    top: 0;
+  border: 2px solid #F7B733;
+  border-radius: 1em;
 
-};
+  background-color: #DFDCE3;
 
+  margin: 1em;
+  max-width: 25vw;
+  min-height: 60vh;
+  float: left;
 
-#article {
+  overflow: visible;
+}
+
+.preview {
+  margin: 1em;
+}
+
+.preview img {
+  max-width: 20vw;
+  border: 2px solid darkgrey;
+  border-radius: 0.3em;
+}
+
+/* Article */
+
+.article {
   float: right;
-  width: 700px;
-};
+  max-width: 70vw;
+  min-height: 100vh;
+}
+
+.article img {
+  height: 40vh;
+  border: 2px solid darkgrey;
+  border-radius: 0.3em;
+  margin: 1em;
+}
+
+button {
+  border: 2px solid #FC4A1A;
+  border-radius: 0.3em;
+  background-color: #FC4A1A;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+.article p {
+  margin: 1em;
+  column-count: 2;
+}
+
+.article h3 {
+  margin: 1em;
+}
+
+.article button {
+  margin: 1em;
+}
+
+/* Footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  background-color: #FC4A1A;
+}
