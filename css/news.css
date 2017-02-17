@@ -19,6 +19,7 @@ h4 {
 
 p {
   font-size: 0.8em;
+  text-align: justify;
 }
 
 button {
@@ -49,6 +50,7 @@ button {
 
 footer {
   font-size: 1em;
+  text-align: center;
   text-transform: uppercase;
   font-weight: 600;
   color: white;
@@ -58,6 +60,7 @@ footer {
 
 header {
   background-color: #4ABDAC;
+  height: 5em;
 }
 
 /* Navigation */
@@ -73,18 +76,18 @@ header {
 }
 
 .title {
-  margin-top: 0.5em;
+  margin-top: 0.2em;
 }
 
 .about {
   float: right !important;
-  margin-top: 1.4em;
+  margin-top: 1em;
 }
 
 /* Logo */
 
 .logo {
-  height: 6em;
+  height: 4em;
   margin-top: 0.5em;
   margin-left: 3em;
 }
@@ -93,7 +96,6 @@ header {
 
 .container {
   position: relative;
-  overflow-y: scroll;
 }
 
 /* Previews */
@@ -101,25 +103,25 @@ header {
 .previews {
   border: 2px solid #F7B733;
   border-radius: 1em;
-
   background-color: #DFDCE3;
-
   margin: 1em;
   max-width: 25vw;
   min-height: 60vh;
+  max-height: 32em;
   float: left;
-
-  overflow: visible;
+  overflow-y: scroll;
 }
 
 .preview {
   margin: 1em;
+  text-align: center;
 }
 
 .preview img {
   max-width: 20vw;
   border: 2px solid darkgrey;
   border-radius: 0.3em;
+  margin-left: 0.8em;
 }
 
 /* Article */
@@ -128,13 +130,16 @@ header {
   float: right;
   max-width: 70vw;
   min-height: 100vh;
+  margin-right: 1em;
 }
 
 .article img {
-  height: 40vh;
+  height: 30vh;
   border: 2px solid darkgrey;
   border-radius: 0.3em;
-  margin: 1em;
+  margin-top: 1em;
+  margin-left: 21em;
+
 }
 
 button {
@@ -152,6 +157,8 @@ button {
 
 .article h3 {
   margin: 1em;
+  text-align: center;
+
 }
 
 .article button {
@@ -161,8 +168,9 @@ button {
 /* Footer */
 
 footer {
-  position: fixed;
+  position:fixed;
   bottom: 0;
+  height: 3em;
   width: 100vw;
   text-align: center;
   background-color: #FC4A1A;
