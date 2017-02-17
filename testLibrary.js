@@ -37,3 +37,11 @@ function testArrayLength(obj, expected, objName="it") {
     console.warn("X " + objName + " is not length " + expected);
   }
 }
+
+function testChangeBy(before, method, after, expected, name="it"){
+  if (after - before == expected) {
+    console.info("√ " + name + " changed by " + expected);
+  } else {
+    console.warn("X " + name + " didnt change by " + expected);
+  }
+}
