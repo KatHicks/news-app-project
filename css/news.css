@@ -15,6 +15,7 @@ html, body, button {
 
 h4 {
   font-weight: 500;
+  font-size: 0.8em;
 }
 
 p {
@@ -96,11 +97,8 @@ header {
 
 .container {
   position: relative;
-<<<<<<< HEAD
   overflow-y: scroll;
   min-height: 100vh;
-=======
->>>>>>> 5342547cd9df202616de7ce68c87f38ef8fbb3be
 }
 
 /* Previews */
@@ -111,11 +109,7 @@ header {
   background-color: #DFDCE3;
   margin: 1em;
   max-width: 25vw;
-<<<<<<< HEAD
-=======
-  min-height: 60vh;
-  max-height: 32em;
->>>>>>> 5342547cd9df202616de7ce68c87f38ef8fbb3be
+  max-height: 75vh;
   float: left;
   overflow-y: scroll;
 }
@@ -136,33 +130,28 @@ header {
 
 .article {
   float: right;
-  max-width: 70vw;
-<<<<<<< HEAD
+  max-width: 65vw;
   min-height: 110vh;
+  margin: 1em;
 }
 
-.article img {
-  height: 200px;
-=======
-  min-height: 100vh;
-  margin-right: 1em;
-}
-
-.article img {
-  height: 30vh;
->>>>>>> 5342547cd9df202616de7ce68c87f38ef8fbb3be
+.article-image {
+  display: block;
+  margin: auto;
+  width: 60%;
   border: 2px solid darkgrey;
   border-radius: 0.3em;
-  margin-top: 1em;
-  margin-left: 21em;
-
 }
 
 button {
+  display: block;
+  width: 60px;
+  margin: auto;
+
   border: 2px solid #FC4A1A;
   border-radius: 0.3em;
   background-color: #FC4A1A;
-  margin: 0 auto;
+
   padding: 0.5em;
 }
 
@@ -177,19 +166,15 @@ button {
 
 }
 
-.article button {
-  margin: 1em;
-}
-
 /* Footer */
 
 footer {
   position:fixed;
   bottom: 0;
-  height: 3em;
   width: 100vw;
   text-align: center;
   background-color: #FC4A1A;
+  line-height: 0px;
 }
 
 /* Responsiveness */
@@ -200,7 +185,7 @@ footer {
   }
 
   .article img {
-    max-height: 200px;
+    /*max-height: 200px;*/
   }
 
   .previews img {
