@@ -94,6 +94,7 @@ header {
 .container {
   position: relative;
   overflow-y: scroll;
+  min-height: 100vh;
 }
 
 /* Previews */
@@ -106,7 +107,6 @@ header {
 
   margin: 1em;
   max-width: 25vw;
-  min-height: 60vh;
   float: left;
 
   overflow: visible;
@@ -117,7 +117,7 @@ header {
 }
 
 .preview img {
-  max-width: 20vw;
+  width: 20vw;
   border: 2px solid darkgrey;
   border-radius: 0.3em;
 }
@@ -127,11 +127,11 @@ header {
 .article {
   float: right;
   max-width: 70vw;
-  min-height: 100vh;
+  min-height: 110vh;
 }
 
 .article img {
-  height: 40vh;
+  height: 200px;
   border: 2px solid darkgrey;
   border-radius: 0.3em;
   margin: 1em;
@@ -166,4 +166,39 @@ footer {
   width: 100vw;
   text-align: center;
   background-color: #FC4A1A;
+}
+
+/* Responsiveness */
+
+@media (max-width: 725px) {
+  .article {
+    min-width: 100vw;
+  }
+
+  .article img {
+    max-height: 200px;
+  }
+
+  .previews img {
+    width: 60vw;
+  }
+
+  .previews {
+    min-width: 95vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .article p {
+    column-count: 1;
+  }
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .article p {
+      column-count: 1;
+    }
 }
