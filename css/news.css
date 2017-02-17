@@ -1,0 +1,22 @@
+
+
+
+.previews {
+    border: 1px solid black;
+    background-color: lightblue;
+    color: blue;
+    width: 150px;
+    height: 510px;
+    overflow: visible;
+    float:left;
+    margin-right: 25px;
+    overflow-y: scroll;
+    top: 0;
+
+};
+
+
+#article {
+  float: right;
+  width: 700px;
+};
